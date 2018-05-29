@@ -76,7 +76,7 @@ public class PlayerMovement : MonoBehaviour {
     void MovePlayer (){
 
         if (Input.GetMouseButtonDown(0)){
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Ray ray = UnityEngine.Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit)){
@@ -106,7 +106,7 @@ public class PlayerMovement : MonoBehaviour {
 
             playerMov = moveSpeed * transform.forward * Time.deltaTime;
 
-            if (Vector3.Distance(transform.position, targetPos) <= 0.5f)
+            if (Vector3.Distance(transform.position, targetPos) <= 0.3f)
             {
                 canMove = false;
             }
