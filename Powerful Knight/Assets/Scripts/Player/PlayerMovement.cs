@@ -45,6 +45,29 @@ public class PlayerMovement : MonoBehaviour {
     }
 
 
+
+   public bool IsfinishedMoving {
+
+        get {
+            return finishedMoving;
+        } 
+
+        set{
+            finishedMoving = value;
+        }
+    }
+
+    public Vector3 TargetPos {
+
+        get {
+            return targetPos;
+        }
+        set {
+            targetPos = value;
+        }
+    }
+
+
     void CalculateHeight(){
         if (IsGrounded()){
             
