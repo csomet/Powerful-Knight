@@ -5,8 +5,9 @@ non-commercial purpose.
 
 *Game demo captures*
 
-<img src="/ARMeter/demo/demo1.png?raw=true">
-
+<img src="/Powerful Knight/demo/demo1.png?raw=true">
+<img src="/Powerful Knight/demo/demo2.png?raw=true">
+<img src="/Powerful Knight/demo/demo3.png?raw=true">
 
 ## 📝Specs 
 Unity 3D version 2018.1.2f1
