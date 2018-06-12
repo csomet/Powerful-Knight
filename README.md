@@ -1,6 +1,6 @@
 # Powerful Knight
 
-**RPG Demo Game** made in Unity C# and Visual Studio editor. Inspired by LOL and others.
+**RPG Demo Game** made in Unity C# and Visual Studio editor. Inspired by LOL and others. Some models are not include in Github because of copyrights and licenses.
 non-commercial purpose.
 
 *Game demo captures*
