@@ -21,19 +21,21 @@ public class Camera : MonoBehaviour {
 
 	}
 
-
-
     void Update () {
 
-        targetHeight = player.position.y + followHeight;
-        currentRotation = transform.eulerAngles.y;
-        currentHeight = Mathf.Lerp(transform.position.y, targetHeight, 0.9f * Time.deltaTime);
-        Quaternion euler = Quaternion.Euler(0f, currentRotation, 0f);
-        Vector3 targetPos = player.position - (euler * Vector3.forward) * followDistance;
-        targetPos.y = currentHeight;
+      
+            targetHeight = player.position.y + followHeight;
+            currentRotation = transform.eulerAngles.y;
+            currentHeight = Mathf.Lerp(transform.position.y, targetHeight, 0.9f * Time.deltaTime);
+            Quaternion euler = Quaternion.Euler(0f, currentRotation, 0f);
+            Vector3 targetPos = player.position - (euler * Vector3.forward) * followDistance;
+            targetPos.y = currentHeight;
 
-        //Set the camera position:
-        transform.position = targetPos;
-        transform.LookAt(player);
+            //Set the camera position:
+            transform.position = targetPos;
+            transform.LookAt(player);
+
+        
+     
 	}
 }

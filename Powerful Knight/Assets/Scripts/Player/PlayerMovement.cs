@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour {
     private Animator animator;
     private CharacterController characterController;
     private CollisionFlags collisionFlags = CollisionFlags.None;
+    private PlayerHealth playerHealth;
 
     private float moveSpeed  = 5f;
     private bool canMove;
@@ -26,7 +27,7 @@ public class PlayerMovement : MonoBehaviour {
     void Awake(){
         animator = GetComponent<Animator>();
         characterController = GetComponent<CharacterController>();
-
+        playerHealth = GetComponent<PlayerHealth>();
 
             
     }
@@ -36,6 +37,7 @@ public class PlayerMovement : MonoBehaviour {
 	void Update () {
         CalculateHeight();
         CheckIfWeFinisihedMovement();
+        CheckDeath();
 	}
 
 
@@ -139,6 +141,15 @@ public class PlayerMovement : MonoBehaviour {
         {
             playerMov.Set(0f, 0f, 0f);
             animator.SetFloat("Walk", 0f);
+
+        }
+    }
+
+
+    void CheckDeath(){
+        if (playerHealth.health <= 0f){
+            enabled = false;
+            GetComponent<PlayerAttack>().enabled = false;
 
         }
     }

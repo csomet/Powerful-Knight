@@ -49,67 +49,71 @@ public class PlayerAttack : MonoBehaviour {
 
                 playerMovement.IsfinishedMoving = true;
             }
+
         }
 
 
         if (Input.GetKeyDown(KeyCode.Alpha1)){
 
-            playerMovement.TargetPos = transform.position;
-
             if(playerMovement.IsfinishedMoving && ImagesToFade[0] != 1 && canAttack){
                 ImagesToFade[0] = 1;
                 animator.SetInteger("Atk", 1);
+                playerMovement.TargetPos = transform.position;
+                RemoveCursor();
             }
 
 
         }else if (Input.GetKeyDown(KeyCode.Alpha2)){
             
-            playerMovement.TargetPos = transform.position;
 
             if (playerMovement.IsfinishedMoving && ImagesToFade[1] != 1 && canAttack)
             {
                 ImagesToFade[1] = 1;
                 animator.SetInteger("Atk", 2);
+                playerMovement.TargetPos = transform.position;
+                RemoveCursor();
             }
 
         } else if (Input.GetKeyDown(KeyCode.Alpha3)){
             
-            playerMovement.TargetPos = transform.position;
 
             if (playerMovement.IsfinishedMoving && ImagesToFade[2] != 1 && canAttack)
             {
                 ImagesToFade[2] = 1;
                 animator.SetInteger("Atk", 3);
+                playerMovement.TargetPos = transform.position;
+                RemoveCursor();
             }
 
         } else if (Input.GetKeyDown(KeyCode.Alpha4)){
-
-            playerMovement.TargetPos = transform.position;
+            
 
             if (playerMovement.IsfinishedMoving && ImagesToFade[3] != 1 && canAttack)
             {
                 ImagesToFade[3] = 1;
                 animator.SetInteger("Atk", 4);
+                playerMovement.TargetPos = transform.position;
+                RemoveCursor();
             }
 
         } else if (Input.GetKeyDown(KeyCode.Alpha5)){
-
-            playerMovement.TargetPos = transform.position;
 
             if (playerMovement.IsfinishedMoving && ImagesToFade[4] != 1 && canAttack)
             {
                 ImagesToFade[4] = 1;
                 animator.SetInteger("Atk", 5);
+                playerMovement.TargetPos = transform.position;
+                RemoveCursor();
             }
 
         } else if (Input.GetKeyDown(KeyCode.Alpha6)) {
-
-            playerMovement.TargetPos = transform.position;
-
+            
             if (playerMovement.IsfinishedMoving && ImagesToFade[5] != 1 && canAttack)
             {
                 ImagesToFade[5] = 1;
                 animator.SetInteger("Atk", 6);
+                playerMovement.TargetPos = transform.position;
+                RemoveCursor();
             }
 
         } else {
@@ -221,4 +225,18 @@ public class PlayerAttack : MonoBehaviour {
             }
         }
     }
+
+
+    void RemoveCursor(){
+        
+        GameObject cursor = GameObject.FindGameObjectWithTag("Cursor");
+
+        if (cursor){
+            Destroy(cursor);
+        }
+
+    }
+
+
+
 }
