@@ -627,6 +627,72 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2e1da65fcf0be4cd2950bd26f57d5ad9, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &1694743178
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: ad9184e33095e4361a458c36bc4aed9d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ad9184e33095e4361a458c36bc4aed9d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ad9184e33095e4361a458c36bc4aed9d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -16.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ad9184e33095e4361a458c36bc4aed9d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ad9184e33095e4361a458c36bc4aed9d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ad9184e33095e4361a458c36bc4aed9d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ad9184e33095e4361a458c36bc4aed9d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ad9184e33095e4361a458c36bc4aed9d, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: ad9184e33095e4361a458c36bc4aed9d, type: 2}
+      propertyPath: InitialModule.startSize.scalar
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: ad9184e33095e4361a458c36bc4aed9d, type: 2}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 10.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: ad9184e33095e4361a458c36bc4aed9d, type: 2}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.16197936
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: ad9184e33095e4361a458c36bc4aed9d, type: 2}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.3278613
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: ad9184e33095e4361a458c36bc4aed9d, type: 2}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.5283019
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: ad9184e33095e4361a458c36bc4aed9d, type: 2}
+      propertyPath: ShapeModule.radius.value
+      value: 31.3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: ad9184e33095e4361a458c36bc4aed9d, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1721329223
 GameObject:
   m_ObjectHideFlags: 0
